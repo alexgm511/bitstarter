@@ -7,7 +7,7 @@ var msg = '';
 fs.readFile(file, function (err, data) {
     if (err) throw err;
     var buf = new Buffer(data);
-    msg = buf.toString('uft-8',0,buf.length);
+    msg = buf.toString('uft8', 0, buf.length);
 });
 
 var app = express.createServer(express.logger());
