@@ -4,10 +4,10 @@ var fs = require('fs');
 var file = "index.html";
 var msg = '';
 
-fs.readFile(file, function (err, data) {
+fs.readFile(file, 'utf8',  function (err, data) {
     if (err) throw err;
     var buf = new Buffer(data);
-    msg = buf.toString('uft8', 0, buf.length);
+    msg = buf.toString('utf8', 0, buf.length);
 });
 
 var app = express.createServer(express.logger());
