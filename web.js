@@ -13,7 +13,7 @@ fs.readFile(file, 'utf8',  function (err, data) {
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buf.toString(msg));
+  response.send(msg);
 });
 
 var port = process.env.PORT || 5000;
