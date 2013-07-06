@@ -6,7 +6,7 @@ var file = "/index.html";
 fs.readFile(file, function (err, data) {
     if (err) throw err;
     var buf = new Buffer(data);
-}
+)};
 
 var app = express.createServer(express.logger());
 
