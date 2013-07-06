@@ -1,7 +1,7 @@
 var express = require('express');
 
 var fs = require('fs');
-var file = "/index.html";
+var file = "index.html";
 
 fs.readFile(file, function (err, data) {
     if (err) throw err;
